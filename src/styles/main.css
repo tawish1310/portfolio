@@ -1,0 +1,67 @@
+.bio {
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-family: "arial, sans-serif";
+    letter-spacing: 2px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+    display: block;
+  }
+
+  .work a{
+    text-decoration: none ;
+  }
+  .work {
+    font-size: 20px;
+    font-size: 1.1rem;
+    font-family: "muli";
+    letter-spacing: 2px;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .work ::after{
+    font-size: 20px;
+    font-size: 1.1rem;
+    font-family: "muli";
+    letter-spacing: 2px;
+    color: #b91414;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .site-footer {
+    *zoom: 1;
+    max-width: 1050px;
+    _width: 1050px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+  }
+
+  .header {
+    height: 100px;
+    padding: 0 5%;
+    width: 90%;
+    position: absolute;
+    z-index: 1000;
+    font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    color:#000000
+    /* Navigation */
+  }
+
+.img{
+  height: 100px;
+  padding: 0 5%;;
+  position: absolute;
+  max-width: 650;
+  margin-top: 15px;
+  
+  
+}
