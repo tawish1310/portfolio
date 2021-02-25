@@ -5,7 +5,7 @@ import picture from "../styles/ProfilePic.jpg";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,6 +36,7 @@ export default function About({data}) {
         {/*<h1> {data.site.siteMetadata.title}</h1> */}
         <div style={{ margin: `3rem auto`,  padding: `0 1rem` }}>
           <header style={{ marginBottom: `1.5rem` }}>
+          
             <Grid container spacing={2}>
               <Grid item xs={6}>
                   <img
@@ -43,14 +44,15 @@ export default function About({data}) {
                     alt="Profile Picture"
                     src={picture}
                   />
-                
               </Grid>
+              
               <Grid item xs={6} sm container>
                 <Grid item xs container direction="column" spacing={2}>
                   <Grid item xs>
                     <Typography gutterBottom variant="subtitle1" className="bio">
                      
                     </Typography>
+                    
                     <Typography variant="body2" gutterBottom className="bio" >
                       <p style={{marginBottom:'40px'}}>I am a Full Stack Software Engineer and I have been working in the tech industry for the 
                       last decade across three continets while experiencing the software culture

@@ -1,33 +1,48 @@
 import React from "react"
-import { Link } from "gatsby"
+import  Link  from "@material-ui/core/Link"
 import Footer from "../pages/Footer";
-import logo from "../styles/Name.jpg";
-import css from "../styles/main.css";
-import Grid from '@material-ui/core/Grid';
- 
+import logo from "../styles/logo1.jpg";
+import Divider from '@material-ui/core/Divider';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  active: {
+    backgroundColor: 'pink'
+  },
+}));
 
 const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem`}}>
-    <Link to={props.to} style={{color:'black'}}>{props.children}</Link>
+  <li style={{ display: `inline-block`, marginRight: `1rem`,  marginTop:`33px`}}>
+    <Link href={props.to}  
+    style={{ color : 'black', backgroundImage:'none'}} 
+    underline="always"
+    active="true"
+    >{props.children}</Link>
   </li>
 )
 
+
 export default function Layout({ children }) {
-  
+  const classes = useStyles();
   return (
     <div className="header">
       <img src={logo} className="img" />
       <header>
         
-        <ul style={{ float: `right`, marginTop:`25px`}}>
-          <ListLink to="/">About</ListLink>
+        <ul style={{ float: `right`}}>
+          <ListLink to="/" className={classes.active}>About</ListLink>
           <ListLink to="/work/">Work</ListLink>
-          <Footer/>
+          <Footer/> 
         </ul>
+        
       </header>
       {children}
-     
+      
     </div>
+    
     
   )
 }
