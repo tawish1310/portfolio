@@ -79,20 +79,11 @@ export default function About({data}) {
                     in Hackathons especially with projects that are focussed on non-profit solving 
                     pressing community needs.
                     I hold a Bachelors Degree in Electronics Engineering and 
-                    graduated from Arkansas State Univeristy with a Masters in Engineering Managment and am fortunate 
+                    graduated from Arkansas State Univeristy with a Masters in Engineering Managment. I am fortunate 
                     enough to be part of the industry where one can continously learn and innovate and be a lifelong
                     learner.
                     </Typography>
                   </Grid>
-                  <Grid item>
-                    <Typography
-                      variant="body2"
-                      style={{ cursor: "pointer" }}
-                    ></Typography>
-                  </Grid>
-                </Grid>
-                <Grid item>
-                  <Typography variant="subtitle1"></Typography>
                 </Grid>
               </Grid>
             </Grid>
@@ -104,11 +95,3 @@ export default function About({data}) {
     </div>
   )
 }
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }`

@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div>
       <Layout>
-        <div style={{ margin: `3rem auto`, padding: `0 1rem` }}>
-          <header style={{ marginBottom: `1.5rem` }}>
+        <div>
+         
             <Grid container spacing={2}>
-              <Grid item xs={12}></Grid>
+              
               <Grid item xs={12} sm container>
                 <Grid item xs container direction="column" spacing={2}>
                   <Grid item xs>
@@ -49,7 +49,7 @@ export default function Home() {
                         <Grid item xs container direction="column" spacing={2}>
                           <Grid item xs>
                             <ListItem>
-                            <img src={logo} style={{width:150, marginTop:'20px'}}  />
+                            <img src={logo} style={{width:150, marginTop:'20px'}} alt="Sur La Table logo"  />
                             </ListItem>
                             
                             <ListItemText className="work">
@@ -109,7 +109,7 @@ export default function Home() {
                 </Grid>
               </Grid>
             </Grid>
-          </header>
+         
         </div>
       </Layout>
     </div>
