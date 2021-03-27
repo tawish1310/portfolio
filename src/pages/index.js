@@ -11,27 +11,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  paper: {
-    padding: theme.spacing(2),
-    margin: 'auto',
-    maxWidth: 500,
-  },
   image: {
     width: 500,
     height: 630,
-  },
-  img: {
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
   },
 }));
 
 export default function About({data}) {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div>
       <Layout>
         {/*<h1> {data.site.siteMetadata.title}</h1> */}
         <div style={{ margin: `3rem auto`,  padding: `0 1rem` }}>
@@ -43,6 +32,7 @@ export default function About({data}) {
                     className={classes.image}
                     alt="Profile Picture"
                     src={picture}
+                    loading="lazy" 
                   />
               </Grid>
               

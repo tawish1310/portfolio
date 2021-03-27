@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
-import { List, ListItem, ListItemText, ListSubheader } from "@material-ui/core"
+import { List, ListItem, ListItemText } from "@material-ui/core"
 import logo from "../styles/SLTLogo.jpg";
 
 export default function Home() {
