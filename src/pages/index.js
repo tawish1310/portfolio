@@ -31,8 +31,7 @@ export default function About({data}) {
                   <img
                     className={classes.image}
                     alt="Profile Picture"
-                    src={picture}
-                    loading="lazy" 
+                    src={picture} 
                   />
               </Grid>
               

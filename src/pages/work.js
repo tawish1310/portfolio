@@ -20,7 +20,6 @@ export default function Home() {
                       gutterBottom
                       variant="subtitle1"
                       className="work"
-                      style={{fontSize:'30px'}}
                     >
                       Developer Experience
                     </Typography>
@@ -96,14 +95,6 @@ export default function Home() {
                           </Typography>
                         </ListItemText>
                       </List>
-                    </Typography>
-                  </Grid>
-                  <Grid item>
-                    <Typography
-                      variant="body2"
-                    >
-
-
                     </Typography>
                   </Grid>
                 </Grid>
